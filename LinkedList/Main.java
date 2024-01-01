@@ -2,39 +2,57 @@ package revise_DSA.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        LL a = new LL();
-        a.insertEnd(34);
-        a.insertEnd(88);
-        a.insertEnd(23);
-        a.insertEnd(67);
 
-        a.insertFirst(12);
-        a.insertFirst(90);
-
-
-        a.insertAtIndex(78, 4);
-
-        a.display();
-        System.out.println(a.deleteLast());
-        a.display();
-        a.deleteLast();
-        a.display();
-        a.deleteLast();
-        a.display();
-        a.deleteFirst();
-        a.display();
-        a.insertEnd(78);
-        a.insertEnd(34);
-        a.display();
-        a.deleteIndex(3);
-        a.display();
-        a.deleteIndex(2);
-        a.display();
-
-
-
-
-
+        //Singly linked list
+//        LL a = new LL();
+//        a.insertEnd(34);
+//        a.insertEnd(88);
+//        a.insertEnd(23);
+//        a.insertEnd(67);
+//
+//        a.insertFirst(12);
+//        a.insertFirst(90);
+//
+//
+//        a.insertAtIndex(78, 4);
+//
+//        a.display();
+//        System.out.println(a.deleteLast());
+//        a.display();
+//        a.deleteLast();
+//        a.display();
+//        a.deleteLast();
+//        a.display();
+//        a.deleteFirst();
+//        a.display();
+//        a.insertEnd(78);
+//        a.insertEnd(34);
+//        a.display();
+//        a.deleteIndex(3);
+//        a.display();
+//        a.deleteIndex(2);
+//        a.display();
 //        System.out.println(a.length);
+
+
+
+        //Doubly linked list
+//        DLL b = new DLL();
+//        b.insertFirst(34);
+//        b.insertFirst(89);
+//
+//        b.insertLast(67);
+//        b.insertLast(12);
+
+//        b.insertAfterNode(56, 34);
+//        b.insertAfterNode(7, 12);
+
+
+
+//        b.display();
+//        b.displayInReverse();
+//
+//        b.deleteBeforeNode(12);
+//        b.display();
     }
 }
