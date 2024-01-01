@@ -1,4 +1,4 @@
-package revise_DSA;
+package revise_DSA.LinkedList;
 
 public class CLL {
     Node head;
@@ -73,7 +73,7 @@ public class CLL {
 
         temp.next = temp.next.next;
 
-        
+
     }
 
 }

@@ -1,7 +1,5 @@
 package revise_DSA.LinkedList;
 
-import revise_DSA.CLL;
-
 public class Main {
     public static void main(String[] args) {
 
