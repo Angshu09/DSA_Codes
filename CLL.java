@@ -73,6 +73,7 @@ public class CLL {
 
         temp.next = temp.next.next;
 
+        
     }
 
 }
