@@ -49,7 +49,7 @@ public class Main {
 //        b.insertAfterNode(56, 34);
 //        b.insertAfterNode(7, 12);
 
-        
+
 
 //        b.display();
 //        b.displayInReverse();
@@ -64,6 +64,11 @@ public class Main {
         c.insert(3);
         c.insert(45);
         c.insert(89);
+        c.insert(34);
+        c.display();
+        c.delete(45);
+//        c.delete(3);
+//        c.delete(34);
         c.display();
 
     }

@@ -42,8 +42,37 @@ public class CLL {
                 temp = temp.next;
             }while(temp!=head);
         }
-        System.out.println("NULL");
+        System.out.println("HEAD");
     }
 
+    public void delete(int val){
+        Node temp = head;
+
+        if(temp==null){
+            return;
+        }
+
+        if(temp.val == val){
+            head = head.next;
+            tail.next = head;
+            return;
+        }
+
+        boolean check = false;
+        while(temp.next!=head){
+            if(temp.next.val == val){
+                check = true;
+                break;
+            }
+            temp = temp.next;
+        }
+
+        if(check==false){
+            System.out.println("Doesn't found");
+        }
+
+        temp.next = temp.next.next;
+
+    }
 
 }
