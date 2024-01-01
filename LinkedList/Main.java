@@ -1,5 +1,7 @@
 package revise_DSA.LinkedList;
 
+import revise_DSA.CLL;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -47,12 +49,22 @@ public class Main {
 //        b.insertAfterNode(56, 34);
 //        b.insertAfterNode(7, 12);
 
-
+        
 
 //        b.display();
 //        b.displayInReverse();
 //
 //        b.deleteBeforeNode(12);
 //        b.display();
+
+
+
+        //Circular Linked list
+        CLL c = new CLL();
+        c.insert(3);
+        c.insert(45);
+        c.insert(89);
+        c.display();
+
     }
 }
