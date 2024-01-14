@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/sqrtx/
 
 
-package revise_DSA.SearchingAndSorting;
+package revise_DSA.SearchingAndSorting.questions;
 
 public class Sqrt_Of_x {
 
