@@ -1,7 +1,7 @@
 package revise_DSA.Stack;
 
 public class CustomStack {
-    private int[] data;
+     int[] data;
     private static final int DEFAULT_SIZE = 10;
     private int ptr = -1;
 
@@ -39,11 +39,11 @@ public class CustomStack {
         return data[ptr];
     }
 
-    private boolean isFull(){
+    public boolean isFull(){
         return ptr == data.length - 1;
     }
 
-    private boolean isEmpty(){
+    public boolean isEmpty(){
         return ptr == -1;
     }
 }
