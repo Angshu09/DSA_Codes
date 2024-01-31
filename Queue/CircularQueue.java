@@ -1,23 +1,25 @@
 package revise_DSA.Queue;
 
-public class CustomQueue {
-    private int[] data;
+public class CircularQueue {
+     int[] data;
     int end = 0;
+    int start = 0;
+    int size = 0;
 
-    public CustomQueue(){
+    public CircularQueue(){
         this.data = new int[10];
     }
 
-    public CustomQueue(int n){
-       this.data = new int[n];
+    public CircularQueue(int n){
+        this.data = new int[n];
     }
 
     public boolean isFull(){
-        return end == data.length;
+        return size == data.length;
     }
 
     public boolean isEmpty(){
-        return end == 0;
+        return size == 0;
     }
 
     public boolean insert(int item){
@@ -25,7 +27,10 @@ public class CustomQueue {
             System.out.println("Your queue is full");
             return false;
         }
+
         data[end++] = item;
+        end = end % data.length;
+        size++;
         return true;
     }
 
@@ -35,12 +40,9 @@ public class CustomQueue {
             return -1;
         }
 
-        int delItem = data[0];
-
-        for(int i=1; i<end; i++){
-            data[i-1] = data[i];
-        }
-        end--;
+        int delItem = data[start++];
+        start = start % data.length;
+        size--;
         return delItem;
     }
 
@@ -50,14 +52,23 @@ public class CustomQueue {
             return -1;
         }
 
-        return data[0];
+        return data[start];
     }
 
     public void display(){
-        for(int i=0; i<end; i++){
-            System.out.print(data[i] + " <- ");
+        if(isEmpty()){
+            System.out.println("EMPTY");
+            return;
         }
-        System.out.print("END");
+
+        int i = start;
+        do{
+            System.out.print(data[i] + " -> ");
+            i++;
+            i = i % data.length;
+        }while(i != end);
+        System.out.print("End");
         System.out.println();
     }
+
 }
