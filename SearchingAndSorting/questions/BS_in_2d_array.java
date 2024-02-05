@@ -5,11 +5,12 @@ import java.util.Arrays;
 public class BS_in_2d_array {
     public static void main(String[] args){
         int[][] arr = {
-                {12, 45, 78},
-                {19, 56, 90},
-                {91, 112, 300}
+                {10, 20, 30, 40},
+                {15, 25, 35, 45},
+                {28, 29, 37, 49},
+                {33, 34, 38, 50}
         };
-        int target = 300;
+        int target = 37;
         System.out.println(Arrays.toString(search(arr, target)));
         System.out.println(Arrays.toString(rowColSortedSearch(arr, target)));
     }
