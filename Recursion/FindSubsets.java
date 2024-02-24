@@ -12,6 +12,9 @@ public class FindSubsets {
 
         int[] arr = {1, 2, 3};
         System.out.println(subsetSearch(arr));
+
+        int[] arr2 = {1, 2, 2};
+        System.out.println(subsetSearchDuplicate(arr2));
     }
 
     static void find(String ans, String str){
@@ -52,6 +55,31 @@ public class FindSubsets {
                 outer.add(inner);
             }
         }
+        return outer;
+    }
+
+    static ArrayList<ArrayList<Integer>> subsetSearchDuplicate(int[] arr){
+        ArrayList<ArrayList<Integer>> outer = new ArrayList<>();
+        outer.add(new ArrayList<>());
+        int start = 0;
+        int end = 0;
+
+        for(int i=0; i<arr.length; i++){
+            start = 0;
+            if(i>0 && arr[i] == arr[i-1]){
+                start = end + 1;
+            }
+
+            end = outer.size() - 1;
+            int n = outer.size();
+
+            for(int j=start; j<n; j++){
+                ArrayList<Integer> inner = new ArrayList<>(outer.get(j));
+                inner.add(arr[i]);
+                outer.add(inner);
+            }
+        }
+
         return outer;
     }
 }
