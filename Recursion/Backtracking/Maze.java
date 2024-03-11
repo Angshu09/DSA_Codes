@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Maze {
     public static void main(String[] args) {
+
+        printPaths("", 3, 3);
 //
         boolean[][] maze = {
                 {true, true, true},
@@ -134,6 +136,6 @@ public class Maze {
         }
 
         maze[r][c] = true;
-        step = 0;
+        path[r][c] = 0;
     }
 }
