@@ -1,6 +1,7 @@
 package revise_DSA.Recursion.Backtracking;
 
 public class K_Knights {
+
     public static void main(String[] args) {
         int n=4;
         boolean[][] board = new boolean[n][n];
@@ -14,7 +15,7 @@ public class K_Knights {
             return;
         }
 
-        if(row == board.length-1 && col == board.length){
+        if (row == board.length - 1 && col == board.length - 1) {
             return;
         }
 
