@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/arranging-coins/
 
-package revise_DSA.SearchingAndSorting.questions;
+package revise_DSA.SearchingAndSorting;
 
 public class Arranging_Coins {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package revise_DSA.SearchingAndSorting.questions;
+package revise_DSA.SearchingAndSorting;
 
 import java.util.Arrays;
 

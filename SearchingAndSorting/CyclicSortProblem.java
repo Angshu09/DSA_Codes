@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 
-package revise_DSA.SearchingAndSorting.questions;
+package revise_DSA.SearchingAndSorting;
 
 import java.util.ArrayList;
 
