@@ -145,11 +145,12 @@ public class BinarySearchTree {
 
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
-        int[] arr = {10, 12, 20, 15, 30};
+//        int[] arr = {10, 12, 20, 15, 30};
+        int[] arr = {15, 10, 12, 5, 20};
         tree.populate(arr);
-//        tree.display();
+        tree.display();
 //        System.out.println(tree.balanced());
-        tree.preOrder();
+//        tree.preOrder();
     }
 
 }
