@@ -1,5 +1,7 @@
 package revise_DSA.Trees;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class BinaryTrees {
@@ -8,7 +10,7 @@ public class BinaryTrees {
 
     }
 
-    private static class Node{
+    public static class Node{
         int val;
         Node left;
         Node right;
@@ -18,7 +20,7 @@ public class BinaryTrees {
         }
     }
 
-    private Node root;
+    public Node root;
 
     //Insert Elements
     public void populate(Scanner scanner){
@@ -84,6 +86,32 @@ public class BinaryTrees {
 
         prettyDisplay(node.left, level+1);
     }
+
+
+    //It is a question where you have to find the level order successor
+    private int findLevelOrderSuccessor(Node node, int key){
+        if (root == null) return -1;
+
+        Queue<Node> queue = new LinkedList<>();
+
+        queue.add(root);
+
+        while(!queue.isEmpty()){
+            Node currNode = queue.remove();
+            if(currNode.left != null){
+                queue.add(currNode.left);
+            }
+            if(currNode.right != null){
+                queue.add(currNode.right);
+            }
+            if(currNode.val == key){
+                break;
+            }
+        }
+
+        return queue.peek().val;
+    }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
